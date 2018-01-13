@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { BrowserAppsSidebarComponent } from './browser-apps-sidebar/browser-apps-sidebar.component';
 import { BrowserAppsListComponent } from './browser-apps-list/browser-apps-list.component';
+import { LayoutModule } from '../layout/layout.module';
 
 const routes: Routes = [
   {
@@ -17,7 +18,8 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    LayoutModule
   ],
   declarations: [BrowserAppsSidebarComponent, BrowserAppsListComponent]
 })

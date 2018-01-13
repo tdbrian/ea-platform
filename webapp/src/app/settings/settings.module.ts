@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { SettingsSidebarComponent } from './settings-sidebar/settings-sidebar.component';
 import { SettingsMainComponent } from './settings-main/settings-main.component';
+import { LayoutModule } from '../layout/layout.module';
 
 const routes: Routes = [
   {
@@ -17,7 +18,8 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    LayoutModule
   ],
   declarations: [SettingsSidebarComponent, SettingsMainComponent]
 })

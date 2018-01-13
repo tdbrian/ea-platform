@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { ApiServicesSidebarComponent } from './api-services-sidebar/api-services-sidebar.component';
 import { ApiServicesListComponent } from './api-services-list/api-services-list.component';
+import { LayoutModule } from '../layout/layout.module';
 
 const routes: Routes = [
   {
@@ -17,7 +18,8 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    LayoutModule
   ],
   declarations: [ApiServicesSidebarComponent, ApiServicesListComponent]
 })

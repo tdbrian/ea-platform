@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { BusinessDomainsSidebarComponent } from './business-domains-sidebar/business-domains-sidebar.component';
 import { BusinessDomainsListComponent } from './business-domains-list/business-domains-list.component';
+import { LayoutModule } from '../layout/layout.module';
 
 const routes: Routes = [
   {
@@ -17,7 +18,8 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    LayoutModule
   ],
   declarations: [BusinessDomainsSidebarComponent, BusinessDomainsListComponent]
 })
