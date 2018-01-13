@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-api-services-list',
-  templateUrl: './api-services-list.component.html',
-  styleUrls: ['./api-services-list.component.css']
+  templateUrl: './api-services-list.component.html'
 })
 export class ApiServicesListComponent implements OnInit {
 
