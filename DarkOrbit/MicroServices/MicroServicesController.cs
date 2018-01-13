@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
 
-namespace EAPlatform.MicroServices
+namespace DarkOrbit.MicroServices
 {
     [Route("api/[controller]")]
     public class MicroServicesController : Controller

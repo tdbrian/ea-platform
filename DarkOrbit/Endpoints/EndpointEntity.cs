@@ -1,6 +1,6 @@
-﻿using EAPlatform.Utilities.Database;
+﻿using DarkOrbit.Utilities.Database;
 
-namespace EAPlatform.Endpoints
+namespace DarkOrbit.Endpoints
 {
     public class EndpointEntity : MongoDbEntityBase
     {

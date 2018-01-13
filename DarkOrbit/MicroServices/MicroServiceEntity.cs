@@ -1,6 +1,6 @@
-﻿using EAPlatform.Utilities.Database;
+﻿using DarkOrbit.Utilities.Database;
 
-namespace EAPlatform.MicroServices
+namespace DarkOrbit.MicroServices
 {
     public class MicroServiceEntity : MongoDbEntityBase
     {

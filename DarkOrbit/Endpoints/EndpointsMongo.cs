@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using EAPlatform.Utilities.Database;
+using DarkOrbit.Utilities.Database;
 using MongoDB.Bson;
 using MongoDB.Driver;
 
-namespace EAPlatform.Endpoints
+namespace DarkOrbit.Endpoints
 {
     public class EndpointsMongo
     {

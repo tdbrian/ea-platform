@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
 
-namespace EAPlatform.Endpoints
+namespace DarkOrbit.Endpoints
 {
     [Route("api/[controller]")]
     public class EndpointsController : Controller

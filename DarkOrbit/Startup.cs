@@ -1,13 +1,13 @@
-﻿using EAPlatform.Endpoints;
-using EAPlatform.MicroServices;
-using EAPlatform.Utilities.Database;
+﻿using DarkOrbit.Endpoints;
+using DarkOrbit.MicroServices;
+using DarkOrbit.Utilities.Database;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
 
-namespace EAPlatform
+namespace DarkOrbit
 {
     public class Startup
     {
@@ -25,7 +25,7 @@ namespace EAPlatform
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info { Title = "EAPlatform", Version = "v1" });
+                c.SwaggerDoc("v1", new Info { Title = "DarkOrbit", Version = "v1" });
             });
 
             services.AddSingleton<CustomerMongoDb>();
@@ -44,7 +44,7 @@ namespace EAPlatform
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "EAPlatform");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "DarkOrbit");
             });
             app.UseMvc();
         }

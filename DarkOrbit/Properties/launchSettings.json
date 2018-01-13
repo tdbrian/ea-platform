@@ -16,7 +16,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "EAPlatform": {
+    "DarkOrbit": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/values",

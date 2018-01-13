@@ -1,7 +1,7 @@
 ﻿using System;
 using MongoDB.Bson;
 
-namespace EAPlatform.Utilities.Database
+namespace DarkOrbit.Utilities.Database
 {
     public abstract class MongoDbEntityBase
     {
