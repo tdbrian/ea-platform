@@ -1,11 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Routes, RouterModule } from '@angular/router';
+
 import { BrowserAppsSidebarComponent } from './browser-apps-sidebar/browser-apps-sidebar.component';
 import { BrowserAppsListComponent } from './browser-apps-list/browser-apps-list.component';
 
+const routes: Routes = [
+  {
+    path: 'browser-apps',
+    children: [
+      { path: 'list', component: BrowserAppsListComponent }
+    ]
+  }
+];
+
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forChild(routes)
   ],
   declarations: [BrowserAppsSidebarComponent, BrowserAppsListComponent]
 })

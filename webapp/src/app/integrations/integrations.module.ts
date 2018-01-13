@@ -1,11 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Routes, RouterModule } from '@angular/router';
+
 import { IntegrationsSidebarComponent } from './integrations-sidebar/integrations-sidebar.component';
 import { IntegrationsListComponent } from './integrations-list/integrations-list.component';
 
+const routes: Routes = [
+  {
+    path: 'integrations',
+    children: [
+      { path: 'list', component: IntegrationsListComponent }
+    ]
+  }
+];
+
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forChild(routes)
   ],
   declarations: [IntegrationsSidebarComponent, IntegrationsListComponent]
 })
