@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
 import { DashboardsSidebarComponent } from './dashboards-sidebar/dashboards-sidebar.component';
+import { LayoutModule } from '../layout/layout.module';
 
 const routes: Routes = [
   { path: 'dashboards/main', component: MainDashboardComponent }
@@ -12,8 +13,12 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    LayoutModule
   ],
-  declarations: [MainDashboardComponent, DashboardsSidebarComponent]
+  declarations: [
+    MainDashboardComponent,
+    DashboardsSidebarComponent
+  ]
 })
 export class DashboardsModule { }
