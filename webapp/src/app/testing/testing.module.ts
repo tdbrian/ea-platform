@@ -7,7 +7,7 @@ import { TestingSidebarComponent } from './testing-sidebar/testing-sidebar.compo
 
 const routes: Routes = [
   {
-    path: 'security',
+    path: 'testing',
     children: [
       { path: 'main', component: TestingMainComponent }
     ]

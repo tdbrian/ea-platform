@@ -7,7 +7,7 @@ import { UserIdentitiesMainComponent } from './user-identities-main/user-identit
 
 const routes: Routes = [
   {
-    path: 'security',
+    path: 'user-identities',
     children: [
       { path: 'main', component: UserIdentitiesMainComponent }
     ]

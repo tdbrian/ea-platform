@@ -7,7 +7,7 @@ import { SettingsMainComponent } from './settings-main/settings-main.component';
 
 const routes: Routes = [
   {
-    path: 'security',
+    path: 'settings',
     children: [
       { path: 'main', component: SettingsMainComponent }
     ]

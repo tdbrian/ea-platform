@@ -7,7 +7,7 @@ import { SystemsManagementMainComponent } from './systems-management-main/system
 
 const routes: Routes = [
   {
-    path: 'security',
+    path: 'systems-management',
     children: [
       { path: 'main', component: SystemsManagementMainComponent }
     ]
